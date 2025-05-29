@@ -3,96 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master the SAT, PSAT, and AP Courses</title>
+  <title>AcePrep – Master SAT, PSAT & AP Courses</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Master the SAT, PSAT, and AP Courses</h1>
-    <p class="subtitle">Boost your scores with expert coaching and proven strategies!</p>
-    <div class="header-actions">
-      <button class="cta" onclick="goToPage('contact')">Get a FREE Trial Class</button>
-      <button id="toggleMode" class="toggle-btn" aria-pressed="false">Switch to Dark Mode</button>
-    </div>
-  </header>
+  <!-- Header/Hero Section -->
+  <header class="site-header hero-gradient" id="home">
+    <nav class="main-nav">
+      <div class="logo-title">
+        <span class="site-logo" aria-label="AcePrep Logo">🎓</span>
+        <span class="brand">AcePrep</span>
+      </div>
+      <ul>
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#features-tutors" class="nav-link">Why AcePrep</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button id="toggleMode" class="toggle-btn nav-btn" aria-pressed="false" title="Toggle dark mode">
+            🌓
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1>Boost Your SAT / PSAT Scores & Master AP Courses with <span class="brand-inline">AcePrep</span></h1>
+        <p class="subtitle">
+          16+ years of proven results. One-on-one coaching, <b>unlimited practice tests</b>, and full transparency for parents. Get into your dream school.
+        </p>
+        <div class="unlimited-banner" aria-label="Unlimited Practice Tests">
+          <span>🔥 UNLIMITED PRACTICE TESTS INCLUDED! 🔥</span>
+        </div>
+        <a href="#contact" class="cta nav-btn">Get a FREE Trial Class</a>
+            </div>
+            <div class="hero-right">
+        <img src="pexels-tima-miroshnichenko-5428264.jpg" alt="AcePrep Students" class="hero-img">
+            </div>
+          </div>
+        </header>
 
-  <nav>
-    <ul>
-      <li onclick="goToPage('tutors')">Tutors</li>
-      <li onclick="goToPage('coaching')">Coaching</li>
-      <li onclick="goToPage('options')">Options</li>
-      <li onclick="goToPage('contact')">Contact</li>
-    </ul>
-  </nav>
+        <main>
+          <!-- About Section -->
+          <section id="about" class="page-section">
+  <div class="card about-card">
+    <h2>Personalized SAT, PSAT & AP Coaching</h2>
+    <p>
+      We offer SAT / PSAT and AP coaching tailored to your strengths. Our students consistently achieve scores between <b>1400–1600</b> and see a minimum boost of 100 points with our rigorous <b>unlimited practice tests</b>. We provide <b>one-on-one attention</b> for AP Biology and other AP courses to help boost your GPA, plus guidance for high school course selection and <b>full progress visibility for parents</b>.
+    </p>
+  </div>
+</section>
 
-  <main>
-    <section id="tutors" class="page fade">
-      <div class="card">
-        <h2>Meet Our Expert Tutors</h2>
-        <ul class="tutor-list">
-          <li>
-            <strong>Wajeedra Tuvvapati</strong> <br>
-            <span class="tutor-title">SAT Trainer</span> <br>
-            <span class="tutor-desc">16 years of proven success. Helped hundreds of students achieve 1500+ SAT scores and gain admission to top US colleges.</span>
-          </li>
-          <li>
-            <strong>Sudhamayi Ch</strong> <br>
-            <span class="tutor-title">British Council - Certified English Coach & AP Bio Specialist</span> <br>
-            <span class="tutor-desc">Expert in English and has a masters in microbiology. Known for making complex concepts simple and engaging.</span>
-          </li>
-          <li>
-            <strong>Pratheek Parvataneni</strong> <br>
-            <span class="tutor-title">High School Senior, UMD Computer Science</span> <br>
-            <span class="tutor-desc">Scored 1560 on the SAT. Passionate about helping peers master test-taking strategies and time management.</span>
-          </li>
-        </ul>
+    <!-- Why AcePrep & Tutors (Side by Side) -->
+    <section id="features-tutors" class="page-section features-tutors-section">
+      <div class="features-tutors-grid">
+        <div class="card features-card">
+          <h2>Why Choose AcePrep?</h2>
+          <ul class="features-list">
+            <li>Proven strategies for every SAT/PSAT and AP section</li>
+            <li>One-on-one attention – online or in person</li>
+            <li>Time management & test-day stress reduction</li>
+            <li>Confidence-building to reach your dream score</li>
+            <li>Creative & academic writing coaching for college essays</li>
+            <li>Flexible scheduling</li>
+            <li>Take the guesswork out of test prep</li>
+          </ul>
+        </div>
+        <div class="card tutors-card">
+          <h2>Meet Our Tutors</h2>
+          <ul class="tutor-list">
+            <li>
+              <strong>Wajeedra Tuvvapati</strong><br>
+              <span class="tutor-title">SAT, PSAT & AP Trainer</span><br>
+              <span class="tutor-desc">16 years of proven success. Helped hundreds of students achieve 1500+ SAT scores and gain admission to top US colleges.</span>
+            </li>
+            <li>
+              <strong>Sudhamayi Ch</strong><br>
+              <span class="tutor-title">British Council Certified English Coach & AP Bio Specialist</span><br>
+              <span class="tutor-desc">Expert in English and has a master's in microbiology. Known for making complex concepts simple and engaging.</span>
+            </li>
+            <li>
+              <strong>Pratheek Parvataneni</strong><br>
+              <span class="tutor-title">High School Senior, UMD Computer Science</span><br>
+              <span class="tutor-desc">Scored 1560 on the SAT. Passionate about helping peers master test-taking strategies and time management.</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="coaching" class="page fade hidden">
-      <div class="card">
-        <h2>Personalized Coaching & Proven Strategies</h2>
-        <ul class="features-list">
-          <li>One-on-one attention and small group sessions</li>
-          <li>Customized study plans tailored to each student's strengths and weaknesses</li>
-          <li>Practice with real SAT, PSAT, and AP exam questions</li>
-          <li>Weekly progress tracking and feedback</li>
-          <li>Test-taking strategies to maximize scores</li>
-        </ul>
-        <p class="note">Our students consistently see 100+ point improvements on the SAT and higher AP scores!</p>
-      </div>
-    </section>
-
-    <section id="options" class="page fade hidden">
-      <div class="card">
-        <h2>Flexible Learning Options</h2>
-        <ul class="features-list">
-          <li>Flexible scheduling: evenings, weekends, and summer intensives</li>
-          <li>Individual, group, and crash course packages</li>
-          <li>Affordable pricing with discounts for early sign-ups</li>
-        </ul>
-        <p class="note">Contact us to discuss a plan that fits your goals and schedule!</p>
-      </div>
-    </section>
-
-    <section id="contact" class="page fade hidden">
-      <div class="card">
-        <h2>Contact Us</h2>
-        <p>Take the guesswork out of test prep. Start your journey to top college admissions today!</p>
-        <ul class="contact-list">
-          <li><strong>Phone:</strong> <a href="tel:7036384171">703-638-4171</a></li>
-          <li><strong>Email:</strong> <a href="mailto:kinitechno@yahoo.com">kinitechno@yahoo.com</a></li>
-        </ul>
-        <p class="note">Ask about our free trial class and see the difference expert coaching can make!</p>
+    <!-- Contact Section with Form -->
+    <section id="contact" class="page-section alt-bg">
+      <div class="contact-container">
+        <div class="card contact-info-card">
+          <h2>Contact AcePrep</h2>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:7036384171">703-638-4171</a></li>
+            <li><strong>Email:</strong> <a href="mailto:kinitechno@yahoo.com">kinitechno@yahoo.com</a></li>
+          </ul>
+          <p class="note">Ask about our free trial class and see the difference expert coaching can make!</p>
+        </div>
+        <form class="card contact-form" id="contactForm" autocomplete="off">
+          <h2>Register / Send Inquiry</h2>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input required type="text" id="name" name="name" placeholder="Full Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input required type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input required type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+          </div>
+          <div class="form-group">
+            <label for="grade">Student Grade</label>
+            <select required id="grade" name="grade">
+              <option value="" disabled selected>Select Grade</option>
+              <option>8th</option>
+              <option>9th</option>
+              <option>10th</option>
+              <option>11th</option>
+              <option>12th</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="help">What do you need help with?</label>
+            <select required id="help" name="help">
+              <option value="" disabled selected>Select Option</option>
+              <option>SAT</option>
+              <option>PSAT</option>
+              <option>AP Courses</option>
+              <option>Multiple (describe below)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inquiry">How can we help?</label>
+            <textarea id="inquiry" name="inquiry" placeholder="Describe your inquiry or goals..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="cta">Submit</button>
+          <div id="form-message" class="form-message"></div>
+        </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SAT Coaching Services &mdash; Empowering Students for Success</p>
+    <p>&copy; 2025 AcePrep &mdash; Empowering Students for Success</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Dark mode toggle for all pages
+    const toggleBtn = document.getElementById('toggleMode');
+    function updateToggleLabel() {
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.setAttribute('aria-pressed', 'true');
+        document.documentElement.style.background = "var(--dark-bg)";
+      } else {
+        toggleBtn.setAttribute('aria-pressed', 'false');
+        document.documentElement.style.background = "var(--light-bg)";
+      }
+    }
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      updateToggleLabel();
+    });
+    updateToggleLabel();
+
+    // Nav link highlighting
+    const sections = document.querySelectorAll('.page-section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    function onScroll() {
+      let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+      sections.forEach((section, i) => {
+        if (
+          section.offsetTop - 100 <= scrollPos &&
+          section.offsetTop + section.offsetHeight - 100 > scrollPos
+        ) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          navLinks[i].classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', onScroll);
+
+    // Contact form submission (front-end only)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-message').textContent = "Thank you! We'll be in touch soon.";
+      this.reset();
+    });
+  </script>
 </body>
 </html>
