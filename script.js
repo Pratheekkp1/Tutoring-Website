@@ -53,13 +53,12 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
   try {
     const response = await fetch('https://script.google.com/macros/s/AKfycbwxWBukOyQBs9xIK5Ge6hk_ZJYciXejEbV7pnZQjOiOrpsY_b86qlOje1aLZ1LXgWg/exec', {
-  method: 'POST',
-  body: JSON.stringify(data),
-  headers: {
-    'Content-Type': 'application/json'
-  }
-});
-
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
     if (response.ok) {
       document.getElementById('form-message').textContent = "Thank you! We'll be in touch soon.";
