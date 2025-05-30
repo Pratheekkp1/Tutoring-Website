@@ -30,3 +30,31 @@ toggleBtn.addEventListener('click', () => {
   updateToggleLabel();
 });
 updateToggleLabel();
+
+ocument.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    grade: form.grade.value,
+    help: form.help.value,
+    inquiry: form.inquiry.value
+  };
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbw8Po1NpCZD1MlEaw5uj57jRrdWUMtrs-0vSzks8gH5OUGwfjdy5w83xo78TfuxrOUz/exec', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {'Content-Type': 'application/json'}
+    });
+    if (response.ok) {
+      document.getElementById('form-message').textContent = "Thank you! We'll be in touch soon.";
+      form.reset();
+    } else {
+      document.getElementById('form-message').textContent = "Submission failed. Please try again.";
+    }
+  } catch (err) {
+    document.getElementById('form-message').textContent = "Submission failed. Please try again.";
+  }
+});
